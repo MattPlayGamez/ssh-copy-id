@@ -1,9 +1,0 @@
-[package]
-name = "ssh-copy-id"
-version = "0.1.0"
-edition = "2024"
-
-[build-dependencies]
-embed-resource = "3.0.1"
-
-[dependencies]

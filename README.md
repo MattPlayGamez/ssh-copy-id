@@ -1,4 +1,4 @@
-# 🔐 SSH AutoKey Installer
+# 🔐 SSH-copy-id Installer (Windows)
 
 Een kleine Rust-applicatie om je publieke SSH-sleutel automatisch naar een remote server te kopiëren voor **wachtwoordloos inloggen (autologin)** via SSH zoals  het geval in Linux.
 
@@ -15,7 +15,7 @@ De tool doet in feite het volgende:
 
 ---
 
-## Installatie
+## ⬇️ Installatie
 De tool kan worden gedownload met de onderliggende one-liner
 ````powershell
 powershell.exe -Command "if(-not([Security.Principal.WindowsPrincipal]::new([Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator))){Start-Process powershell -Verb RunAs -ArgumentList '-NoProfile -Command `"Invoke-WebRequest https://github.com/MattPlayGamez/ssh-copy-id/releases/download/main/ssh-copy-id.exe -OutFile C:\Windows\ssh-copy-id.exe`"';exit}else{Invoke-WebRequest https://github.com/MattPlayGamez/ssh-copy-id/releases/download/main/ssh-copy-id.exe -OutFile C:\Windows\ssh-copy-id.exe}" 
