@@ -43,12 +43,12 @@ cargo build --release
 
 2. **Uitvoeren**:
 ```bash
-target\release\ssh-autokey.exe <user@host>
+target\release\ssh-copy-id.exe <user@host>
 ```
 
 > Bijvoorbeeld:
 ```bash
-target\release\ssh-autokey.exe matt@192.168.0.2
+target\release\ssh-copy-id.exe matt@192.168.0.2
 ```
 
 ---
@@ -56,7 +56,7 @@ target\release\ssh-autokey.exe matt@192.168.0.2
 ## 🧪 Voorbeeld
 
 ```powershell
-> ssh-autokey.exe matt@192.168.0.2
+> ssh-copy-id.exe matt@192.168.0.2
 ✅ Public key copied successfully to matt@192.168.0.2
 ```
 
@@ -73,20 +73,20 @@ ssh matt@192.168.0.2
 Toon helptekst:
 
 ```bash
-ssh-autokey.exe --help
+ssh-copy-id.exe --help
 ```
 
 Of bij te weinig argumenten:
 
 ```bash
-ssh-autokey.exe
+ssh-copy-id.exe
 ```
 
 Geeft:
 
 ```
 Too few arguments.
-Usage: ssh-autokey.exe <SSH User@Host; e.g. matt@192.168.0.2>
+Usage: ssh-copy-id.exe <SSH User@Host; e.g. matt@192.168.0.2>
 ```
 
 ---
